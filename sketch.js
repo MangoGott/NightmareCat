@@ -5,8 +5,9 @@ let capture;
 let buffer;
 let result;
 let lines;
-let w = 640,
-    h = 480;
+let w = 640, h = 480;
+
+//test
 
 function setup() {
   // Create a canvas
