@@ -1,7 +1,50 @@
 *{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Montserrat, sans-serif;
+  background: rgb(255, 255, 255);
+}
+
+h1{
+  color: red;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2{
+  text-decoration: underline;
+
+}
+
+body{
   text-align: center;
-  background: lightblue;
+}
+.content{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.howto {
+  text-align: left;
+  width: 40%;
+    margin: auto;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: red;
+  font-weight: bold;
+}
+
+#status {
+  font-family: 'Courier New', Courier, monospace;
+  text-size: 30px;
+  color: rgb(252, 74, 74);
 }
 
 div{

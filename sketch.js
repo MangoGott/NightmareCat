@@ -15,7 +15,7 @@ function setup() {
   inputCanvas.class('border-box').parent('input');
 
   // Display initial input image
-  inputImg = loadImage('images/robin.jpg', drawImage);
+  //inputImg = loadImage('images/robin.jpg', drawImage);
   capture = createCapture(VIDEO);
   capture.hide();
   // Selcect output div container
@@ -28,7 +28,7 @@ function setup() {
   strokeWeight(2);
 
 
-
+  /*
   // Get the buttons
   currentColor = color(203, 222, 174);
   currentStroke = 17;
@@ -37,17 +37,18 @@ function setup() {
   select('#pink').mousePressed(() => currentColor = color(255, 163, 244));
   select('#white').mousePressed(() => currentColor = color(255, 255, 255));
   select('#size').mouseReleased(() => currentStroke = select('#size').value());
-
+  */
   // Select 'transfer' button html element
   transferBtn = select('#transferBtn');
 
   // Select 'clear' button html element
+  /*
   clearBtn = select('#clearBtn');
   // Attach a mousePressed event to the 'clear' button
   clearBtn.mousePressed(function() {
     clearCanvas();
   });
-
+  */
   // Set stroke to black
   stroke(5);
   pixelDensity(1);
@@ -62,12 +63,13 @@ function setup() {
 
 // Draw on the canvas when mouse is pressed
 function draw() {
+  /*
   if (mouseIsPressed) {
     stroke(currentColor);
     strokeWeight(currentStroke)
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
-
+  */
 
   capture.loadPixels();
     if (capture.pixels.length > 0) { // don't forget this!        
@@ -157,10 +159,11 @@ function drawImage() {
 }
 
 // Clear the canvas
+/*
 function clearCanvas() {
   background(255);
 }
-
+*/
 function transfer() {
   // Update status message
   statusMsg.html('Transfering...');
