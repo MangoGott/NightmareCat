@@ -43,7 +43,6 @@ ol li::before {
 
 #status {
   font-family: 'Courier New', Courier, monospace;
-  text-size: 30px;
   color: rgb(252, 74, 74);
 }
 
